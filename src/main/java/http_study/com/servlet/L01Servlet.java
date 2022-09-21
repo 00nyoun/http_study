@@ -18,6 +18,7 @@ public class L01Servlet extends HttpServlet{
    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
       // HttpServletRequest req : 요청객체
       // HttpServletResponse resp : 응답객체
+      resp.setContentType("text/html; charset=UTF-8");
       resp.getWriter().append("<h1>Hello Servlet 동적 리소스"+(1000/3)+"</h1>");
       
    }
